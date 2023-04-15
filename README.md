@@ -1,6 +1,6 @@
 # Custom Linked List Library
 
-This is a personal project where I am creating my own implementation of the **'std::list'** library, which is a doubly linked list container provided by the C++ Standard Library. My implementation is of a linked list container for integers currently.
+This is a personal project where I am creating my own implementation of the **'std::list'** library, which is a linked list container for integers.
 
 ## <span style="font-size: smaller;">Motivation</span>
 
