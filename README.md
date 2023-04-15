@@ -1,4 +1,4 @@
-# Custom Linked List Library
+# Custom LinkedList Library
 
 This is a personal project where I am creating my own implementation of the **'std::list'** library, which is a linked list container for integers.
 
