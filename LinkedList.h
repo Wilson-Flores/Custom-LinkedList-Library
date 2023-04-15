@@ -14,7 +14,7 @@ class LinkedList {
 private:
 	Node* head;
 
-	bool isEmpty() { return head == nullptr; }
+	bool empty() { return head == nullptr; }
 
 public:
 	LinkedList();
@@ -26,22 +26,22 @@ public:
 	void print();
 
 	// add a node in front of the linked list
-	void push(int value);
+	void push_front(int value);
 
 	// add a node to the end of the linked list
-	void append(int value);
+	void push_back(int value);
 
 	// add a node at a given position in the linked list starting with 0 as the first position
 	void insert(int position, int value);
 
 	// removes node at the end of the linked list
-	void pop();
+	void pop_back();
 
 	// look for a specific value within the linked list, returns its position in the list
 	void find(int value);
 
 	// removes a node at a specific position in the list
-	void remove(int position);
+	void erase(int position);
 
 	// deletes every node from the list starting from the head node
 	~LinkedList();

@@ -29,12 +29,12 @@ void LinkedList::print()
 }
 
 
-void LinkedList::push(int value)
+void LinkedList::push_front(int value)
 {
 	Node* new_node = new Node;
 	new_node->data = value;
 
-	if (isEmpty())
+	if (empty())
 	{
 		new_node->next = nullptr;
 	}
@@ -45,13 +45,13 @@ void LinkedList::push(int value)
 }
 
 
-void LinkedList::append(int value)
+void LinkedList::push_back(int value)
 {
 	Node* new_node = new Node;
 	new_node->data = value;
 	new_node->next = nullptr;
 
-	if (isEmpty())
+	if (empty())
 	{
 		head = new_node;
 	}
@@ -75,7 +75,7 @@ void LinkedList::insert(int position, int value)
 	}
 	else if (position == 0)
 	{
-		push(value);
+		push_front(value);
 	}
 	// Fix this so it says "Error: position is out of bound!"
 	else if (position > size())
@@ -101,7 +101,7 @@ void LinkedList::insert(int position, int value)
 }
 
 
-void LinkedList::pop()
+void LinkedList::pop_back()
 {
 
 	if (size() == 0)
@@ -145,7 +145,7 @@ void LinkedList::find(int value)
 }
 
 
-void LinkedList::remove(int position) 
+void LinkedList::erase(int position) 
 {
 	if (position < 0)
 	{
