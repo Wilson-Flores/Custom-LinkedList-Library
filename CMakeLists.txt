@@ -2,5 +2,5 @@
 
 project ("LinkedList")
 
-add_executable (LinkedList "LinkedList.cpp"  "LinkedList.h" "main.cpp")
+add_executable (LinkedList "LinkedList.cpp"  "LinkedList.hpp" "main.cpp")
 
