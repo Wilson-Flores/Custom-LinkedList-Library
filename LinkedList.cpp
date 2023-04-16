@@ -104,7 +104,7 @@ void LinkedList::insert(int position, int value)
 void LinkedList::pop_back()
 {
 
-	if (size() == 0)
+	if (empty())
 	{
 		std::cout << "Error: List is empty!\n";
 	}
@@ -188,6 +188,21 @@ void LinkedList::erase(int position)
 	}
 
 
+}
+
+
+void LinkedList::pop_front(){
+	if (empty()){
+		std::cout << "Error: List is empty!\n";
+	}
+	
+	else if(size() == 1){
+		head = nullptr;
+	}
+
+	else{
+
+	}
 }
 
 

@@ -14,37 +14,32 @@ class LinkedList {
 private:
 	Node* head;
 
-	bool empty() { return head == nullptr; }
+	// ----- Capacity Functions -----
+
+	bool empty() { return head == nullptr; }	// returns true if linked list is empty
+
+	int size();									// gets the size of the linked list
+
 
 public:
 	LinkedList();
 
-	// gets the size of the linked list
-	int size();
+	// ----- Modifier Functions -----
 
-	// prints each value in the linked list
-	void print();
+	void insert(int position, int value);		// add a node at a given position in the linked list starting with 0 as the first position
+	void erase(int position);					// removes a node at a specific position in the list
+	void push_back(int value);					// add a node to the end of the linked list
+	void pop_back();							// removes node at the end of the linked list
+	void push_front(int value);					// add a node in front of the linked list
+	void pop_front();							// removes the first element
 
-	// add a node in front of the linked list
-	void push_front(int value);
+	// ----- Additional Functions -----
 
-	// add a node to the end of the linked list
-	void push_back(int value);
+	void print();								// prints each value in the linked list
+	void find(int value);						// look for a specific value within the linked list, returns its position in the list
 
-	// add a node at a given position in the linked list starting with 0 as the first position
-	void insert(int position, int value);
 
-	// removes node at the end of the linked list
-	void pop_back();
-
-	// look for a specific value within the linked list, returns its position in the list
-	void find(int value);
-
-	// removes a node at a specific position in the list
-	void erase(int position);
-
-	// deletes every node from the list starting from the head node
-	~LinkedList();
+	~LinkedList();								// deletes every node from the list starting from the head node
 };
 
 #endif
